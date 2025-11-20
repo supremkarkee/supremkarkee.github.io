@@ -72,7 +72,7 @@ Ubuntu Desktop and Ubuntu Server share the same underlying architecture and CLI.
 **Network Name:** `OSnetwork`
 [cite_start]**Status:** Both OSs are isolated but can communicate with each other[cite: 46, 47].
 
-![Network Settings in VirtualBox](./images/network-settings.png)
+![Network Settings in VirtualBox](./images/images/network-settings.png.jpg)
 *[Ref: VirtualBox Network Settings]*
 
 ### IP Address Configuration
@@ -81,16 +81,16 @@ Ubuntu Desktop and Ubuntu Server share the same underlying architecture and CLI.
 ![Server IP Address Output](./images/server-ip.png)
 
 **2. [cite_start]Workstation IP Address:** `192.168.10.3 /24` [cite: 51]
-![Workstation IP Address Output](./images/workstation-ip.png)
+![Workstation IP Address Output](./images/workstation-ip.png.jpg)
 
 ### Connectivity Tests (Ping)
 
 **From Server to Workstation:**
-![Ping from Server to Workstation](./images/ping-server-to-workstation.png)
+![Ping from Server to Workstation](./images/ping-server-to-workstation.png.jpg)
 [cite_start]*[Result: 0% Packet Loss, successful connection]* [cite: 53]
 
 **From Workstation to Server:**
-![Ping from Workstation to Server](./images/ping-workstation-to-server.png)
+![Ping from Workstation to Server](./images/ping-workstation-to-server.png.jpg)
 [cite_start]*[Result: 0% Packet Loss, successful connection]* [cite: 54]
 
 ---
@@ -103,36 +103,36 @@ I used command-line tools to verify the system specifications for both machines.
 
 **1. Kernel Version (`uname`)**
 [cite_start]This command confirms the machine is running the Linux kernel[cite: 57].
-![Workstation Uname Output](./images/workstation-uname.png)
+![Workstation Uname Output](./images/workstation-uname.png.jpg)
 
 **2. Memory Usage (`free -h`)**
 Total RAM allocated is **8GB** (8131028 KB). [cite_start]Currently, around 1GB is used, leaving 6GB free[cite: 58, 60, 61].
-![Workstation Free Memory Output](./images/workstation-free.png)
+![Workstation Free Memory Output](./images/workstation-free.png.jpg)
 
 **3. Disk Usage (`df -h`)**
 The main partition (`/dev/sda2`) is **25GB**, with 5.9GB used (26%). [cite_start]The `tmpfs` filesystems (Run/Lock/Shared Memory) are temporary storage in RAM and will be cleared upon reboot[cite: 62, 63, 65].
-![Workstation Disk Usage Output](./images/workstation-disk.png)
+![Workstation Disk Usage Output](./images/workstation-disk.png.jpg)
 
 **4. Distribution Info (`lsb_release -a`)**
 [cite_start]Confirms the OS is **Ubuntu 24.04.3 LTS** (Codename: noble)[cite: 66, 68].
-![Workstation LSB Release Output](./images/workstation-lsb.png)
+![Workstation LSB Release Output](./images/workstation-lsb.png.jpg)
 
 ---
 
 ### B. Server Documentation
 
 **1. Kernel Version (`uname`)**
-![Server Uname Output](./images/server-uname.png)
+![Server Uname Output](./images/server-uname.png.jpg)
 [cite_start]*[Result: Linux]* [cite: 70]
 
 **2. Memory Usage (`free -h`)**
 Total RAM is **9.6GB**. Currently used: **419MB**, Free: **9.5GB**. [cite_start]This confirms the headless server uses significantly less RAM than the desktop version[cite: 72, 73].
-![Server Free Memory Output](./images/server-free.png)
+![Server Free Memory Output](./images/server-free.png.jpg)
 
 **3. Disk Usage (`df -h`)**
 The main drive (`/dev/sda2`) is **25GB** with only **2.7GB** used (12%). [cite_start]The server installation is much smaller than the workstation[cite: 74, 76].
-![Server Disk Usage Output](./images/server-disk.png)
+![Server Disk Usage Output](./images/server-disk.png.jpg)
 
 **4. Distribution Info (`lsb_release -a`)**
 [cite_start]Confirms the Server is running **Ubuntu 24.04.3 LTS** (Codename: noble)[cite: 78, 80].
-![Server LSB Release Output](./images/server-lsb.png)
+![Server LSB Release Output](./images/server-lsb.png.jpg)
