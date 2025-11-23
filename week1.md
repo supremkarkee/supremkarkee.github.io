@@ -12,6 +12,11 @@ This document outlines the planning and justification for a virtual operating sy
 
 ---
 
+## System Architecture Design 
+![System design ](images-week1/System.draw.io.png)
+
+**NAT Network**
+Both OS are under the NAT network and can freely communicate ( intervm-communication ). 
 ## Distribution Selection Justification: Server
 
 **Selected Distribution:** Ubuntu Server 24.04.3 TLS
