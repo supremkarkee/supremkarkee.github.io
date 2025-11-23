@@ -13,7 +13,7 @@ This document outlines the planning and justification for a virtual operating sy
 ---
 
 ## System Architecture Design 
-![System design ](images-week1/System.draw.io.png)
+![System design ](images-week1/System.drawio.png)
 
 **NAT Network**
 Both OS are under the NAT network and can freely communicate ( intervm-communication ). 
