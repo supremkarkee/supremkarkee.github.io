@@ -149,7 +149,7 @@ From the picture above, we can clearly see that the total amount of RAM is **9.6
 
 **Df -h**
 
-![df -h](images-week1/server-disk.jpg)
+![df -h](images-week1/server-disk.png)
 
 We can observe the following:
 1. The main drive (`/dev/sda2`) is **25GB** in total among which **2.7GB** has already been used which leaves us **21GB** available to use.
