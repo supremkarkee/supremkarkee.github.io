@@ -253,19 +253,19 @@ sudo adduser adminuser
 
 ![](/images-week2/UPM1.0.png)
 
-3. Adding user to sudo group
+2. Adding user to sudo group
 
 ![](/images-week2/UPM2.png)
 
-5. Verfication group membership
+3. Verfication group membership
 
 ![](/images-week2/verification_upm.png)
 
-7. Testing sudo access
+4. Testing sudo access
    
 ![](/images-week2/test_UPM.png)
 
-9. Listing all users with sudo access
+5. Listing all users with sudo access
     
 ![](/images-week2/test2-upm.png)
 
@@ -319,4 +319,5 @@ An attacker can gain access to the root account directly after successful initia
 Mitigation: By disabling root login from sshd_config (PermitRootLogin no), we are forcing attackers to guess a specific username first.
 
 we have also created adminuser and granted sudo rights only when necessary. This adds a layer of protection.
+
 
