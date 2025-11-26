@@ -246,20 +246,21 @@ sudo ufw allow from 192.168.10.3 (workstation) to any port 22  : Allows incoming
 ## USER and Privilege Management.
 
 1. Creating a user
-    sudo adduser adminuser
-    ![](/images-week2/UPM1.0.png)
+sudo adduser adminuser
+![](/images-week2/UPM1.0.png)
 
-2. Adding user to sudo group
-    ![](/images-week2/UPM2.png)
+3. Adding user to sudo group
+![](/images-week2/UPM2.png)
 
-3. Verfication group membership
-    ![](/images-week2/verification_upm.png)
+4. Verfication group membership
+![](/images-week2/verification_upm.png)
 
-4. Testing sudo access:
-    ![](/images-week2/test_UPM.png)
+5. Testing sudo access:
+![](/images-week2/test_UPM.png)
 
-5. Listing all users with sudo access
-    ![](/images-week2/test2-upm.png)
+6. Listing all users with sudo access
+![](/images-week2/test2-upm.png)
 
 
 ## Access Control (MAC)
+
