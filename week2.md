@@ -191,7 +191,7 @@ Some of the features of this key are :
 
 Before SSH configuration:
 
-![before](/images-week2/ssh_hardening1.pngimages)
+![before](/images-week2/ssh_hardening1.png)
 
 After SSH configuration:
 
@@ -204,12 +204,12 @@ After SSH configuration:
 2. PubkeyAuthentication yes
     This settings ensures that the login is possible using public/private key pairs. When we generated the key in our workstation : 
 
-    ![ssh key generation ](/images-week2/ssh-key-gen-proof.png)
+![ssh key generation ](/images-week2/ssh-key-gen-proof.png)
 
 
     we also copied the SSH public key to the server which enables us to login without a password. 
 
-    ![server key add](/images-week2/server-key-added.png)
+![server key add](/images-week2/server-key-added.png)
 
 3. PermitRootLogin no
 
@@ -219,14 +219,14 @@ After SSH configuration:
 
    Changing the default SSH port is one of the common hardening technique to reduce automated attacks.
 
-   ![](/images-week2/2424.png)
+![](/images-week2/2424.png)
 
     we must also configure the firewall to allow newly setup port by using this command:
 
     sudo ufw allow 2424/tcp
     sudo ufw reload
 
-    ![](/images-week2/2424_2.png)
+![](/images-week2/2424_2.png)
 
 
 ## Firewall Implementation 
@@ -249,18 +249,17 @@ sudo ufw allow from 192.168.10.3 (workstation) to any port 22  : Allows incoming
 sudo adduser adminuser
 ![](/images-week2/UPM1.0.png)
 
-3. Adding user to sudo group
+2. Adding user to sudo group
 ![](/images-week2/UPM2.png)
 
-4. Verfication group membership
+3. Verfication group membership
 ![](/images-week2/verification_upm.png)
 
-5. Testing sudo access:
+4. Testing sudo access:
 ![](/images-week2/test_UPM.png)
 
-6. Listing all users with sudo access
+5. Listing all users with sudo access
 ![](/images-week2/test2-upm.png)
 
 
 ## Access Control (MAC)
-
