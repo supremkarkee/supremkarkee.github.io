@@ -207,7 +207,7 @@ After SSH configuration:
 ![ssh key generation ](/images-week2/ssh-key-gen-proof.png)
 
 
-    we also copied the SSH public key to the server which enables us to login without a password. 
+we also copied the SSH public key to the server which enables us to login without a password. 
 
 ![server key add](/images-week2/server-key-added.png)
 
@@ -263,3 +263,51 @@ sudo adduser adminuser
 
 
 ## Access Control (MAC)
+
+### APP armor
+ AppArmor is a linux security system that limits what program can do, it is a Mandatory Access Control (MAC) System available in Ubuntu.
+
+ ![](/images-week2/ap1)
+
+
+## Setting Up Automatic Updates
+
+To make sure we can automate the process of installing security updates we can use the package called unattended-upgrades.
+
+command line to install this package:
+sudo apt install unattended-upgrades
+
+![](/images-week2/un1)
+
+**Enabling the package**
+
+We can enable the package using the command : sudo dpkg-reconfigure --priority=low unattended-upgrades
+
+
+![](/images-week2/un2)
+
+
+Checking the status of unattended-upgrades package using the command sudo systemctl status unattended-upgrades
+
+
+![](/images-week2/un3)
+
+## Threat Model
+
+1. Brute Force SSH Attacks
+
+Attackers can use automated scripts to bruteforce login attempts using popular word dictionaries like rockyou.txt and using tools like john the ripper. But since we have disabled passwordAuthentication in sshd_config file and enforced public key login we have secured the system from bruteforce attacks.
+
+2. Unrestricted Network Access (Reconnaissance)
+
+Attackers can use bots and tools like nmap to scan for open ports to exploit vulnerabilites in the system.
+
+Mitigation : we have configured UFW with a policy to deny all incoming traffic except for our workstation. We can significantly reduce the attack surface by implmenting proper firewall rules.
+
+3. Root Privilege Compromise
+
+An attacker can gain access to the root account directly after successful initial access. 
+
+Mitigation: By disabling root login from sshd_config (PermitRootLogin no), we are forcing attackers to guess a specific username first.
+
+we have also created adminuser and granted sudo rights only when necessary. This adds a layer of protection.
