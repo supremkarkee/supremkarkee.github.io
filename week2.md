@@ -154,9 +154,6 @@ To generate the ssh key we will use the  following command :
 
 **ssh-keygen -t ed25519 -C "server-key"
 
-![ssh key gen](/images-week2/ssh-ke)
-
-[imageproof server key]
 
 we are using ed25519 because it is based on elliptic-curve cyptography and provides very strong protection even with smaller key sizes(256-bit). They are also very faster to generate, sign, verify and uses less CPU power.
 
@@ -259,7 +256,7 @@ sudo adduser adminuser
 
 3. Verfication group membership
 
-![](/images-week2/verification_upm.png)
+![](/images-week2/verification_UPM.png)
 
 4. Testing sudo access
    
@@ -319,5 +316,6 @@ An attacker can gain access to the root account directly after successful initia
 Mitigation: By disabling root login from sshd_config (PermitRootLogin no), we are forcing attackers to guess a specific username first.
 
 we have also created adminuser and granted sudo rights only when necessary. This adds a layer of protection.
+
 
 
