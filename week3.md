@@ -20,7 +20,7 @@ verification for installation can be done using
 
 sysbench --version
 
-![sysbench version](/week3_image/w1)
+![sysbench version](/week3_image/w1.png)
 
 
 
@@ -38,7 +38,7 @@ sudo apt install stress-ng -y
 
 Verification : stress-ng --version
 
-![stress-ng](/week3_image/w2)
+![stress-ng](/week3_image/w2.png)
 
 
 ### I/O Intensive
@@ -56,7 +56,7 @@ Verification:
 
 fio --version
 
-![fio ](/week3_image/w3)
+![fio ](/week3_image/w3.png)
 
 ### Network Intensive.
 
@@ -84,7 +84,7 @@ Verification:
 iperf3 --version.
 
 
-![iperf3](/week3_image/w4)
+![iperf3](/week3_image/w4.png)
 
 ## Application Selection Matrix
 
@@ -190,6 +190,7 @@ CPU and RAM usage are expected to remain low. The primary metric will be network
 ## Monitoring Strategy 
 
 To measure the performane impact of the selected applications, we will use utilize the tools which we established in week2.
+
 
 
 
