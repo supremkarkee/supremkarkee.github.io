@@ -127,7 +127,7 @@ Some of the popular tools are as follows
 
 command given = stress --cpu 4 --timeout 60&
 
-![command proof](/images-week2/proof_of_stress_command.png)
+![command proof](/images-week2/proof_of_stress_test_command.png)
 
 ### Results from monitoring tools
 
@@ -316,6 +316,7 @@ An attacker can gain access to the root account directly after successful initia
 Mitigation: By disabling root login from sshd_config (PermitRootLogin no), we are forcing attackers to guess a specific username first.
 
 we have also created adminuser and granted sudo rights only when necessary. This adds a layer of protection.
+
 
 
 
