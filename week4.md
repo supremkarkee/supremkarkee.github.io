@@ -11,18 +11,18 @@ The whole process of configuring ssh for key based authentication is explained i
 ### Step 1 : **SSH key generation**
  Before we configure the server to allow ssh with keys we need to generate ssh key in the workstation. The key can be generated using the command : 
  
-    ssh-keygen -t ed25519 -C "comments"
+   ssh-keygen -t ed25519 -C "comments"
 
 
-    ![ssh key generation image ](/week4_image/keygen4.png)
+![ssh key generation image ](/week4_image/keygen4.png)
     ssh
 
 
 ### Step 2 : ***Installing the key in the server****
 
-    Once the key has been generated we need to install the key to the server we want to access, this can be done using the command : ssh-copy-id username@server_ip_address
+   Once the key has been generated we need to install the key to the server we want to access, this can be done using the command : ssh-copy-id username@server_ip_address
 
-    ![Key installation ](/week4_image/key-install.png)
+   ![Key installation ](/week4_image/key-install.png)
 
 ### Step 3 : **Configuration of ssh file**
 
@@ -45,7 +45,7 @@ After these changes we can simply shh into the server without any passwords.
 
 shh username@ip address of server
 
-    ![](/week4_image/ssh-login.png)
+   ![](/week4_image/ssh-login.png)
 
 
 ## 2. Configuration of firewall to allow ssh from one specific host only
@@ -54,7 +54,7 @@ Using uncomplicated firewall.
 
 Current status : 
 
-    ![](/week4_image/ufw-current-status.png)
+   ![](/week4_image/ufw-current-status.png)
 
 
 rule 1: ufw allow from workstation_ip_address to any port 22/(custom port if any) proto tcp
@@ -65,7 +65,8 @@ After applying these rules we should be able to perfrom ssh from one specific ip
 
 Status after changes : 
 
-    ![](/week4_image/status_after_change.png)
+   ![](/week4_image/status_after_change.png)
+
 
 
 
