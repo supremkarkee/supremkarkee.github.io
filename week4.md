@@ -81,9 +81,9 @@ User Group Verification
 
 tests
 
-![](/week4_image/switching_user_udate_test.png)
+![](/week4_image/switching_user_update_test.png)
 
-![](id)
+![](/week4_image/id.png)
 
 
 
@@ -120,6 +120,7 @@ Root access allows a user to enter the root mode (god mode) which provides unres
 
 
 ![](/week4_image/demo(final).png)
+
 
 
 
