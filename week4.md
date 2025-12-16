@@ -76,12 +76,9 @@ Creating a non root administrative user
 
 User Group Verification 
 
-![](/week4_image/adding_user_to_sudo_verfication.png)
+![](/week4_image/getentGroupSudo.png)
 
 
-tests
-
-![](/week4_image/switching_user_update_test.png)
 
 ![](/week4_image/id.png)
 
@@ -120,6 +117,7 @@ Root access allows a user to enter the root mode (god mode) which provides unres
 
 
 ![](/week4_image/demo(final).png)
+
 
 
 
